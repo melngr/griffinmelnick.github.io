@@ -1,0 +1,7 @@
+<filesMatch ".(css)$">
+    Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+
+<filesMatch ".(jpg|png|svg)$">
+    Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
