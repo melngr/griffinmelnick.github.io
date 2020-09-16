@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Azure Maps Demo</title>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css" />
+        <script src="https://atlas.microsfot.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+
+        <script type="text/javascript">
+            function InitMap() {
+                var map = new atlas.Map( "map", {
+                    view        : "Auto",
+                    authOptions : {
+                        authType        : "subscriptionKey"
+                        subscriptionKey : "pkNQchuiXCeEQeicTAPJIZgBa1kJoKga7C"
+                    }
+                } );
+            }
+        </script>
+
+        <style>
+            html, body {
+                margin: 0;
+            }
+            #map {
+                height: 100vh;
+                width: 100vw;
+            }
+        </style>
+    </head>
+
+    <body onload="InitMap()">
+        <div id="map"></div>
+    </body>
+</html>
