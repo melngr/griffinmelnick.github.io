@@ -19,7 +19,7 @@
         var map, client, datasource;
         var categories = ['bar', 'coffee', 'restaurant'];
 
-        function GetMap() {
+        window.onload = function() {
             //Initialize a map instance.
             map = new atlas.Map('myMap', {
                 center: [-122.338124, 47.6078],
@@ -90,7 +90,7 @@
         }
     </script>
 </head>
-<body onload="GetMap()">
+<body>
     <div id="myMap" style="position:relative;width:100%;min-width:290px;height:600px;"></div>
 
     <div style="position:absolute;top:15px;left:15px;background-color:white;padding:10px;border-radius:10px;">
